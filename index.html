@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habeshan Treasures - Ethiopian Cultural Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <h1>Habeshan Treasures</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#hero" class="active">Home</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cart-icon" id="cart-toggle">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Ethiopia's Richest Treasures</h1>
+                <p>Authentic Ethiopian spices, pottery, and cultural items shipped worldwide</p>
+                <a href="#products" class="btn primary-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Categories</h2>
+                <p>Explore our most popular Ethiopian treasures</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images/spices.jpg" alt="Ethiopian Spices">
+                    <div class="category-info">
+                        <h3>Spices</h3>
+                        <a href="#spices" class="btn small-btn">View All</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/pottery.jpg" alt="Ethiopian Pottery">
+                    <div class="category-info">
+                        <h3>Pottery</h3>
+                        <a href="#pottery" class="btn small-btn">View All</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/textiles.jpg" alt="Ethiopian Textiles">
+                    <div class="category-info">
+                        <h3>Textiles</h3>
+                        <a href="#textiles" class="btn small-btn">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Authentic items from Ethiopia's rich culture</p>
+            </div>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="spices">Spices</button>
+                <button class="filter-btn" data-filter="pottery">Pottery</button>
+                <button class="filter-btn" data-filter="textiles">Textiles</button>
+                <button class="filter-btn" data-filter="coffee">Coffee</button>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be dynamically inserted here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="About Habeshan Treasures">
+                </div>
+                <div class="about-content">
+                    <h2>About Habeshan Treasures</h2>
+                    <p>Habeshan Treasures brings authentic Ethiopian cultural products directly to your doorstep. Founded in 2020, our mission is to share Ethiopia's rich heritage with the world while supporting local artisans and farmers.</p>
+                    <p>Every product in our collection is carefully sourced from Ethiopian artisans who use traditional methods passed down through generations.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>200+</h3>
+                            <p>Products</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Artisans Supported</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The berbere spice blend is authentic and exactly what I needed for my doro wat recipe!"</p>
+                        <div class="customer">
+                            <h4>Sarah Johnson</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Beautiful mesob basket that brings a piece of Ethiopian culture to my home. Fast shipping and great quality!"</p>
+                        <div class="customer">
+                            <h4>Michael Thompson</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The coffee ceremony set is exquisite. I feel like I've brought a piece of Ethiopia into my home."</p>
+                        <div class="customer">
+                            <h4>Amina Ahmed</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get updates on new products, special offers, and Ethiopian cultural insights</p>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <h3>Habeshan Treasures</h3>
+                    <p>Bringing Ethiopia's finest cultural artifacts to the world</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="#spices">Spices</a></li>
+                            <li><a href="#pottery">Pottery</a></li>
+                            <li><a href="#textiles">Textiles</a></li>
+                            <li><a href="#coffee">Coffee</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#about">Our Story</a></li>
+                            <li><a href="#">Artisans</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Habeshan Treasures. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn primary-btn checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="quick-view-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="product-quick-view">
+                <div class="product-quick-view-image">
+                    <img id="modal-product-image" src="" alt="Product Image">
+                </div>
+                <div class="product-quick-view-details">
+                    <h3 id="modal-product-title"></h3>
+                    <div class="product-quick-view-price">
+                        <span id="modal-product-price"></span>
+                    </div>
+                    <div class="product-quick-view-rating">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>(25 reviews)</span>
+                    </div>
+                    <p id="modal-product-description"></p>
+                    <div class="product-quick-view-quantity">
+                        <label for="product-quantity">Quantity:</label>
+                        <div class="quantity-input">
+                            <button class="quantity-down">-</button>
+                            <input type="number" id="product-quantity" value="1" min="1">
+                            <button class="quantity-up">+</button>
+                        </div>
+                    </div>
+                    <button class="btn primary-btn add-to-cart-btn" id="modal-add-to-cart">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content checkout-modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <div class="form-section">
+                    <h3>Contact Information</h3>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Shipping Address</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="postal-code">Postal code</label>
+                        <input type="text" id="postal-code" required>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Payment</h3>
+                    <div class="form-group">
+                        <label for="card-name">Name on card</label>
+                        <input type="text" id="card-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card number</label>
+                        <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry-date">Expiry date</label>
+                            <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-summary">
+                    <h3>Order Summary</h3>
+                    <div class="checkout-items" id="checkout-items">
+                        <!-- Checkout items will be dynamically inserted here -->
+                    </div>
+                    <div class="checkout-totals">
+                        <div class="checkout-subtotal">
+                            <span>Subtotal:</span>
+                            <span id="checkout-subtotal">$0.00</span>
+                        </div>
+                        <div class="checkout-shipping">
+                            <span>Shipping:</span>
+                            <span id="checkout-shipping">$0.00</span>
+                        </div>
+                        <div class="checkout-total">
+                            <span>Total:</span>
+                            <span id="checkout-total">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn primary-btn place-order-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Complete Modal -->
+    <div class="modal" id="order-complete-modal">
+        <div class="modal-content order-complete-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="order-complete">
+                <div class="order-complete-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Thank You for Your Order!</h2>
+                <p>Your order has been placed successfully. You will receive a confirmation email shortly.</p>
+                <div class="order-number">
+                    <span>Order Number:</span>
+                    <span id="order-number"></span>
+                </div>
+                <button class="btn primary-btn continue-shopping-btn">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
