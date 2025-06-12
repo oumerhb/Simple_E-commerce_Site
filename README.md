@@ -42,19 +42,4 @@ Before deploying to a live environment, replace the placeholder images with actu
 3. Add category images as `images/spices.jpg`, `images/pottery.jpg`, `images/textiles.jpg`
 4. Add product images named `images/product1.jpg` through `images/product15.jpg`
 
-## Future Improvements
 
-- Add search functionality
-- Implement product pagination
-- Add product details pages
-- Integrate with a backend for real order processing
-- Add user accounts and order history
-- Implement wish list functionality
-
-## Credits
-
-Created by [Your Name] for Habeshan Treasures
-
-## License
-
-MIT License 
